@@ -1,0 +1,45 @@
+@use '../../foundation/functions' as f;
+@use '../../foundation/variables' as v;
+
+/* ハンバーガーボタン */
+.c-hamburger {
+  width: f.rem(50);
+  height: f.rem(50);
+  position: fixed;
+  top: f.rem(5);
+  right: f.rem(10);
+  z-index: 30;
+  cursor: pointer;
+  background-color: #fff;
+  &__line {
+    width: f.rem(30);
+    height: f.rem(3);
+    background-color: v.$black;
+    display: inline-block;
+    position: absolute;
+    left: f.rem(10);
+    transition: 0.3s;
+    &:nth-of-type(1) {
+      top: f.rem(16);
+    }
+    &:nth-of-type(2) {
+      top: f.rem(2);
+    }
+    &:nth-of-type(3) {
+      top: f.rem(34);
+    }
+  }
+  &.is-active {
+    .c-hamburger__line:nth-of-type(1) {
+      top: 24px;
+      transform: rotate(-45deg);
+    }
+    .c-hamburger__line:nth-of-type(2) {
+      opacity: 0;
+    }
+    .c-hamburger__line:nth-of-type(3) {
+      top: 24px;
+      transform: rotate(45deg);
+    }
+  }
+}

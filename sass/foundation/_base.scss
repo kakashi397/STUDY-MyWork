@@ -1,4 +1,19 @@
+@use './variables' as v;
+
 /* ベース */
+
 body {
   font-family: 'Roboto', 'Noto Sans JP', sans-serif;
+  color: v.$black;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
 }
