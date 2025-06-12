@@ -9,6 +9,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
   padding-right: f.rem(20);
   padding-left: f.rem(20);
+  background-color: aqua;
 }
