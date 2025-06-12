@@ -23,7 +23,7 @@
       top: f.rem(16);
     }
     &:nth-of-type(2) {
-      top: f.rem(2);
+      top: f.rem(25);
     }
     &:nth-of-type(3) {
       top: f.rem(34);
@@ -31,14 +31,14 @@
   }
   &.is-active {
     .c-hamburger__line:nth-of-type(1) {
-      top: 24px;
+      top: f.rem(24);
       transform: rotate(-45deg);
     }
     .c-hamburger__line:nth-of-type(2) {
       opacity: 0;
     }
     .c-hamburger__line:nth-of-type(3) {
-      top: 24px;
+      top: f.rem(24);
       transform: rotate(45deg);
     }
   }
