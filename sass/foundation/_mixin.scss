@@ -1,0 +1,20 @@
+@use 'sass:map';
+
+$breakpoints: (
+  xs: "(max-width: 320px)",
+  s : "(max-width: 575px)",
+  m : "(max-width: 767px)",
+  l : "(max-width: 991px)",
+  xl: "(max-width: 1199px)",
+);
+
+@mixin media ($breakpoint) {
+  @if map.has-key($breakpoints, $breakpoint) {
+    @media #{map.get($breakpoints, $breakpoint)} {
+      @content;
+    }
+  }
+  @else {
+    @error "$breakpoints に #{$breakpoint} ってキーは無いぜ";
+  }
+}
