@@ -1,2 +1,5 @@
 @use "setting";
 @use "./layout/header";
+@use "./object/component/logo";
+@use "./object/component/nav";
+@use "./object/component/hamburger";
