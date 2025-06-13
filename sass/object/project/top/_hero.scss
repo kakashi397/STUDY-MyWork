@@ -9,11 +9,9 @@
     padding-bottom: 90px;//clamp
   }
   &__title {
-    font-size: 0;
-    display: inline-block;
+    font-size: 32px;//clamp
   }
   &__line {
     background-color: v.$white;
-    font-size: 32px;//clamp
   }
 }
