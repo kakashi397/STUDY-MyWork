@@ -1,0 +1,11 @@
+@use '../../../foundation/variables' as v;
+
+/* ヒーロー */
+.p-hero {
+  margin-top: clamp(3.75rem, 3.267rem + 1.98vw, 5rem);
+  background-color: v.$keyColor;
+  &__body {
+    padding-top: 50px;//この数は後でクランプ化
+    padding-bottom: 90px;//これも同じく
+  }
+}
