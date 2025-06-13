@@ -1,14 +1,20 @@
 @use '../foundation/functions' as f;
+@use '../foundation/mixin' as m;
 
 /* ヘッダー */
 
 .l-header {
   width: 100%;
   max-width: 1400px;
-  height: f.rem(60);
+  height: clamp(3.75rem, 3.267rem + 1.98vw, 5rem);
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
   padding-right: f.rem(20);
   padding-left: f.rem(20);
+  background-color: aqua;
 }

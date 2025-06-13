@@ -1,5 +1,6 @@
 @use '../../foundation/functions' as f;
 @use '../../foundation/variables' as v;
+@use '../../foundation/mixin' as m;
 
 /* ハンバーガーボタン */
 .c-hamburger {
@@ -11,6 +12,10 @@
   z-index: 30;
   cursor: pointer;
   background-color: #fff;
+  display: block;
+  @include m.media(m) {
+    display: none;
+  }
   &__line {
     width: f.rem(30);
     height: f.rem(3);
