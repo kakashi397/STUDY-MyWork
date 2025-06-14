@@ -1,18 +1,41 @@
 @use '../../../foundation/variables' as v;
+@use '../../../foundation/mixin' as m;
 
 /* ヒーロー */
 .p-hero {
-  margin-top: clamp(3.75rem, 3.267rem + 1.98vw, 5rem);
   background-color: v.$keyColor;
+  margin-top: clamp(3.75rem, 3.267rem + 1.98vw, 5rem);
+  padding: 0 clamp(1.25rem, -2.129rem + 13.861vw, 10rem);
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
   &__body {
     padding-top: 50px;//clamp
     padding-bottom: 90px;//clamp
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include m.media(m) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+  &__text {
+    margin-bottom: 33px;//clamp
   }
   &__title {
     font-size: 32px;//clamp
+    font-weight: bold;
+    margin-bottom: 10px;//clamp
   }
   &__line {
     background-color: v.$white;
+    display: inline-block;
+    margin-bottom: 10px;//clamp
+  }
+  &__description {
+    font-size: 14px;//clamp
+  }
+  &__img {
+    max-width: 500px;
   }
 }
 /* 
