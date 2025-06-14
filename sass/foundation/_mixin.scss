@@ -1,5 +1,6 @@
 @use 'sass:map';
 
+//メディアクエリ
 $breakpoints: (
   xs: "(min-width: 320px)",
   s : "(min-width: 575px)",
@@ -7,7 +8,6 @@ $breakpoints: (
   l : "(min-width: 991px)",
   xl: "(min-width: 1199px)",
 );
-
 @mixin media ($breakpoint) {
   @if map.has-key($breakpoints, $breakpoint) {
     @media #{map.get($breakpoints, $breakpoint)} {
