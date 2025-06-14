@@ -1,0 +1,12 @@
+@use'../../foundation/mixin' as m;
+
+/* ユーティリティ */
+.u-sp-none {
+  display: none;
+  @include m.media(m) {
+    display: block;
+  }
+}
+.u-uppercase {
+  text-transform: uppercase;
+}

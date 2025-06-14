@@ -1,0 +1,56 @@
+@use '../../../foundation/variables' as v;
+@use '../../../foundation/mixin' as m;
+@use '../../../foundation/functions' as f;
+
+/* ヒーロー */
+.p-hero {
+  background-color: v.$keyColor;
+  margin-top: clamp(3.75rem, 3.267rem + 1.98vw, 5rem);
+  margin-bottom: f.rem(40);
+  padding: 0 clamp(1.25rem, -2.129rem + 13.861vw, 10rem);
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+  @include m.media(m) {
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  }
+  &__wrapper {
+    max-width: f.rem(1080);
+    margin: 0 auto;
+  }
+  &__body {
+    padding-top: clamp(3.125rem, 2.642rem + 1.98vw, 4.375rem);
+    padding-bottom: clamp(5.625rem, 3.936rem + 6.931vw, 10rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include m.media(m) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: normal;
+    }
+  }
+  &__text {
+    margin-bottom: f.rem(33);
+    @include m.media(m) {
+      margin-bottom: 0;
+    }
+  }
+  &__title {
+    font-size: clamp(2rem, 1.614rem + 1.584vw, 3rem);
+    font-weight: bold;
+    margin-bottom: clamp(0.625rem, 0.360rem + 1.089vw, 1.313rem);
+    @include m.media(m) {
+      padding-top: f.rem(9);
+    }
+  }
+  &__line {
+    background-color: v.$white;
+    display: inline-block;
+    margin-bottom: f.rem(10);
+  }
+  &__description {
+    font-size: clamp(0.875rem, 0.827rem + 0.198vw, 1rem);
+  }
+  &__img {
+    max-width: clamp(21.875rem, 16.807rem + 20.792vw, 35rem);
+  }
+}
