@@ -12,10 +12,10 @@ $form-line: #CCCCCC;
 
 // フォントサイズ
 // // 48-32
-// 28-24
+$section-title: f.clamp-rem(390, 24, 1400, 28);
 // 22-
 
-// 20-
+$card-title: f.rem(20);
 // 16-14
 // 16-
 $navfont: f.rem(14);
