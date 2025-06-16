@@ -1,0 +1,21 @@
+@use '../../foundation/functions' as f;
+@use '../../foundation/variables' as v;
+
+/* セクションタイトル */
+.c-section-title {
+  font-size: v.$clamp-l;
+  font-weight: bold;
+  position: relative;
+  text-align: center;
+  &::after {
+    content: "";
+    width: f.clamp-rem(300, 60, 1400, 80);
+    height: f.rem(2);
+    background-color: v.$black;
+    margin: 0 auto;
+    position: absolute;
+    bottom: f.rem(-20);
+    left: 0;
+    right: 0;
+  }
+}

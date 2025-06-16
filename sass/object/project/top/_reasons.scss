@@ -1,0 +1,23 @@
+@use '../../../foundation/functions' as f;
+@use '../../../foundation/mixin' as m;
+
+/* リーズン*/
+.p-reasons {
+  margin-bottom: f.clamp-rem(390, 40, 1400, 80);
+  &__list {
+    display: flex;
+    flex-direction: column;
+    margin-top: f.clamp-rem(390, 60, 1400, 81);
+    margin-right: f.rem(50);
+    margin-left: f.rem(50);
+    @include m.media(m) {
+      flex-direction: row;
+      margin-right: 0;
+      margin-left: 0;
+      justify-content: space-between;
+    }
+  }
+  &__list {
+    gap: f.rem(39);
+  }
+}

@@ -1,5 +1,6 @@
 @use '../foundation/functions' as f;
 @use '../foundation/mixin' as m;
+@use '../foundation/variables' as v;
 
 /* ヘッダー */
 
@@ -13,7 +14,15 @@
   position: fixed;
   top: 0;
   left: 50%;
+  z-index: 999;
+  background-color: v.$white;
   transform: translateX(-50%);
   padding-right: f.rem(20);
   padding-left: f.rem(20);
+  @include m.media(m) {
+    position: static;
+    left: auto;
+    transform: none;
+    margin-inline: auto;
+  }
 }

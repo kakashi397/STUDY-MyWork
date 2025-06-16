@@ -1,7 +1,9 @@
 @use './variables' as v;
 
 /* ベース */
-
+html {
+  box-sizing: border-box;
+}
 body {
   font-family: 'Roboto', 'Noto Sans JP', sans-serif;
   color: v.$black;

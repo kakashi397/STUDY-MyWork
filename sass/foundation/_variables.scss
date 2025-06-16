@@ -11,12 +11,8 @@ $line: #707070;
 $form-line: #CCCCCC;
 
 // フォントサイズ
-// // 48-32
-// 28-24
-// 22-
-
-// 20-
-// 16-14
-// 16-
-$navfont: f.rem(14);
-// 12-
+$fz-xs: f.rem(12);
+$fz-s: f.rem(14);
+$fz-l: f.rem(20);
+$fz-xl: f.rem(22);
+$clamp-l: f.clamp-rem(390, 24, 1400, 28);

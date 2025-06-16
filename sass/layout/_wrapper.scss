@@ -1,5 +1,12 @@
-/* ラッパー */
+@use '../foundation/functions' as f;
 
+/* ラッパー */
 .l-wrapper {
+  max-width: f.rem(1400);
+  margin: 0 auto;
   padding: 0 clamp(1.25rem, -4.301rem + 22.772vw, 15.625rem);
 }
+.l-hero__wrapper {
+  max-width: f.rem(1080);
+  margin: 0 auto;
+} 

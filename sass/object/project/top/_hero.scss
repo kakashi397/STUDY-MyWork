@@ -7,14 +7,11 @@
   background-color: v.$keyColor;
   margin-top: clamp(3.75rem, 3.267rem + 1.98vw, 5rem);
   margin-bottom: f.rem(40);
-  padding: 0 clamp(1.25rem, -2.129rem + 13.861vw, 10rem);
+  padding: 0 f.rem(20);
   clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
   @include m.media(m) {
     clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
-  }
-  &__wrapper {
-    max-width: f.rem(1080);
-    margin: 0 auto;
+    margin-top: 0;
   }
   &__body {
     padding-top: clamp(3.125rem, 2.642rem + 1.98vw, 4.375rem);

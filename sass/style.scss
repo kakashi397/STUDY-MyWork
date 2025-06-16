@@ -4,5 +4,12 @@
 @use "./object/component/logo";
 @use "./object/component/nav";
 @use "./object/component/hamburger";
+@use "./object/component/section-title";
+@use "./object/component/card";
+@use "./object/component/media";
+@use "./object/component/btn";
 @use "./object/project/top/hero";
+@use "./object/project/top/reasons";
+@use "./object/project/top/service";
+@use "./object/project/top/price";
 @use "./object/utility/utility";
