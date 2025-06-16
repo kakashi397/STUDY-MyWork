@@ -1,0 +1,28 @@
+@use '../foundation/functions' as f;
+@use '../foundation/variables' as v;
+@use '../foundation/mixin' as m;
+
+/* コンタクト */
+.l-contact {
+  padding-top: f.clamp-rem(390, 60, 1400, 102);
+  padding-bottom: f.clamp-rem(390, 40, 1400, 59);
+  text-align: center;
+  background-color: v.$keyColor;
+  clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+  @include m.media(m) {
+    clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 100%);
+  }
+  &__body {
+    margin-top: f.clamp-rem(390, 61, 1400, 83);
+    width: f.rem(256);
+    margin-right: auto;
+    margin-left: auto;
+    @include m.media(m) {
+      width: auto;
+    }
+  }
+  &__description {
+    line-height: 1.6em;
+    margin-bottom: f.rem(38);
+  }
+}

@@ -2,9 +2,9 @@
 @use '../../foundation/functions' as f;
 @use '../../foundation/mixin' as m;
 
-/* ナビゲーション */
+/* ヘッダーナビ */
 
-.c-nav {
+.c-header-nav {
   width: 80%;
   height: 100vh;
   position: fixed;
@@ -39,5 +39,4 @@
       gap: f.rem(40);
     }
   }
-  
 }

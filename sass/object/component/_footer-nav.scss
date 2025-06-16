@@ -1,0 +1,28 @@
+@use '../../foundation/variables' as v;
+@use '../../foundation/functions' as f;
+
+/* フッターナビ */
+.c-footer-nav {
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    width: f.clamp-rem(390, 300, 1400, 330);
+  }
+  &__item {
+    font-size: v.$fz-s;
+    position: relative;
+    &::after {
+      content: "";
+      width: f.rem(1);
+      height: f.rem(16);
+      background-color: v.$black;
+      transform: rotate(30deg);
+      position: absolute;
+      top: f.rem(1);
+      right: f.rem(-19);
+    }
+    &:last-child::after {
+      content: none;
+    }
+  }
+}
