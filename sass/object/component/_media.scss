@@ -9,6 +9,11 @@
   @include m.media(m) {
     flex-direction: row;
   }
+  &--reverse {
+    @include m.media(m) {
+      flex-direction: row-reverse;
+    }
+  }
   &__img {
     @include m.media(m) {
       width: 50%;

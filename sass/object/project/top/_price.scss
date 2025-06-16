@@ -5,10 +5,13 @@
 /* プライス */
 .p-price {
   background-color: v.$keyColor;
-  padding-top: f.clamp-rem(300, -77, 1400, 119);
+  margin-top: f.rem(-45);
+  padding-top: f.clamp-rem(300, 76, 1400, 119);
   padding-bottom: f.clamp-rem(300, 77, 1400, 120);
   clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 90%);
+  margin-bottom: f.rem(40);
   @include m.media(m) {
-    clip-path: polygon(0 0, 100% 20%, 100% 80%, 0 100%);
+    margin-top: f.rem(-80);
+    clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 80%);
   }
 }
