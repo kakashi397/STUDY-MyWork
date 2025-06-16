@@ -3,5 +3,4 @@
 .env
 dist/
 build/
-css/
 node_modules/
