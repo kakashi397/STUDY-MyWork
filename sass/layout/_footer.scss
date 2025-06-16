@@ -1,0 +1,24 @@
+@use '../foundation/functions' as f;
+@use '../foundation/mixin' as m;
+@use '../foundation/variables'as v;
+
+/* フッター */
+.l-footer {
+  padding-top: f.rem(40);
+  padding-bottom: f.rem(20);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: f.rem(1) solid v.$line;
+  &__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: f.rem(20);
+    margin-bottom: f.clamp-rem(390, 40, 1400, 60);
+    @include m.media(m) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+}
