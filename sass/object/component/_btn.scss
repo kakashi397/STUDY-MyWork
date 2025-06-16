@@ -1,0 +1,31 @@
+@use '../../foundation/functions' as f;
+@use '../../foundation/variables' as v;
+
+/* ボタン */
+.c-btn {
+  display: inline-block;
+  border: solid f.rem(1) v.$line;
+    max-width: 100%;
+  text-align: center;
+  font-size: v.$fz-s;
+  width: f.rem(260);
+  padding: f.rem(20) 0;
+  &--secondary {
+    background-color: v.$black;
+    color: v.$white;
+    width: f.rem(130);
+    padding: f.rem(9.3) 0;
+    position: relative;
+    &::after {
+      content: '';
+      width: f.rem(7);
+      height: f.rem(7);
+      border-top: solid f.rem(2) v.$white;
+      border-right: solid f.rem(2) v.$white;
+      transform: rotate(45deg);
+      position: absolute;
+      top: f.rem(17);
+      right: f.rem(20);
+    }
+  }
+}

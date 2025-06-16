@@ -1,0 +1,46 @@
+@use '../../foundation/variables' as v;
+@use '../../foundation/functions' as f;
+@use '../../foundation/mixin' as m;
+
+/* メディア */
+.c-media {
+  display: flex;
+  flex-direction: column;
+  @include m.media(m) {
+    flex-direction: row;
+  }
+  &__img {
+    @include m.media(m) {
+      width: 50%;
+    }
+    & img {
+      @include m.media(m) {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  &__body {
+    background-color: v.$white;
+    padding: f.rem(20) f.rem(30);
+    @include m.media(m) {
+      width: 50%;
+    }
+  }
+  &__title {
+    font-size: v.$fz-xl;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    font-family: 'Noto Sans JP';
+  }
+  &__title-jp {
+    font-size: v.$fz-xs;
+    font-weight: normal;
+  }
+  &__description {
+    font-size: v.$fz-s;
+    line-height: 1.76em;//DevToolで探し出した数字
+    margin: f.rem(19.8) 0;//DevToolで探し出した数字
+  }
+}
