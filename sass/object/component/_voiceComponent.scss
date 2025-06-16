@@ -1,0 +1,61 @@
+@use '../../foundation/variables' as v;
+@use '../../foundation/functions' as f;
+@use '../../foundation/mixin' as m;
+
+/* ボイス */
+.c-voice {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &__icon {
+    width: f.clamp-rem(390, 100, 1400, 182);
+    img {
+    border-radius: 50%;
+    }
+  }
+  &__body {
+    width: f.clamp-rem(390, 230, 1400, 660);
+    border: 1px solid v.$line;
+    border-radius: f.rem(8);
+    line-height: 2em;
+    font-size: v.$fz-s;
+    padding-top: f.clamp-rem(390, 10, 1400, 20);
+    padding-right: f.clamp-rem(390, 12, 1400, 20);
+    padding-bottom: f.clamp-rem(390, 10, 1400, 20);
+    padding-left: f.clamp-rem(390, 10, 1400, 20);
+    position: relative;
+    @include m.media(m) {
+      font-size: v.$fz-m;
+    }
+    &::after {
+      content: "";
+      width: f.rem(18);
+      height: f.rem(18);
+      background-color: v.$white;
+      border-right: 1px solid v.$line;
+      border-bottom: 1px solid v.$line;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-45%) rotate(135deg);
+      right: auto;
+      left: f.rem(-9);
+    }
+    span {
+      display: block;
+      font-size: v.$fz-s;
+      text-align: right;
+      @include m.media(m) {
+        font-size: v.$fz-m;
+      }
+    }
+  }
+  &--reverse {
+    flex-direction: row-reverse;
+    .c-voice__body::after {
+      transform: translateY(-50%) rotate(-45deg);
+      right: f.rem(-9);
+      left: auto;
+    }
+  }
+
+}

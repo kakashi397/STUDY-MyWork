@@ -6,10 +6,10 @@
 .p-price {
   background-color: v.$keyColor;
   margin-top: f.rem(-45);
-  padding-top: f.clamp-rem(300, 76, 1400, 119);
-  padding-bottom: f.clamp-rem(300, 77, 1400, 120);
+  padding-top: f.clamp-rem(390, 80, 1400, 119);
+  padding-bottom: f.clamp-rem(390, 80, 1400, 120);
   clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 90%);
-  margin-bottom: f.rem(40);
+  margin-bottom: f.clamp-rem(390, 40, 1400, 80);
   @include m.media(m) {
     margin-top: f.rem(-80);
     clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 80%);

@@ -1,4 +1,5 @@
-@use'../../foundation/mixin' as m;
+@use '../../foundation/mixin' as m;
+@use '../../foundation/variables' as v;
 
 /* ユーティリティ */
 .u-sp-none {
@@ -9,4 +10,12 @@
 }
 .u-uppercase {
   text-transform: uppercase;
+}
+.u-hightlight {
+  font-size: v.$fz-s;
+  font-weight: bold;
+  background: linear-gradient(transparent 50%, v.$highlight 50%);
+  @include m.media(m) {
+    font-size: v.$fz-m;
+  }
 }
