@@ -5,11 +5,12 @@
 .c-btn {
   display: inline-block;
   border: solid f.rem(1) v.$line;
-    max-width: 100%;
+  max-width: 100%;
   text-align: center;
   font-size: v.$fz-s;
   width: f.rem(260);
   padding: f.rem(20) 0;
+  background-color: v.$white;
   &--secondary {
     background-color: v.$black;
     color: v.$white;

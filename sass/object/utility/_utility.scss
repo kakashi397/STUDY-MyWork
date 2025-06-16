@@ -19,3 +19,8 @@
     font-size: v.$fz-m;
   }
 }
+.u-only-sp {
+  @include m.media(m) {
+    display: none;
+  }
+}
