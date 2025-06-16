@@ -5,8 +5,8 @@
 /* サービス（トップ） */
 .p-service {
   background-color: v.$keyColor;
-  padding-top: f.clamp-rem(300, 76, 1400, 119);
-  padding-bottom: f.clamp-rem(300, 77, 1400, 120);
+  padding-top: f.clamp-rem(390, 80, 1400, 119);
+  padding-bottom: f.clamp-rem(390, 80, 1400, 120);
   clip-path: polygon(0 0, 100% 10%, 100% 90%, 0 100%);
   @include m.media(m) {
     clip-path: polygon(0 0, 100% 20%, 100% 80%, 0 100%);

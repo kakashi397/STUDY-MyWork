@@ -1,0 +1,12 @@
+@use '../../../foundation/functions' as f;
+
+/* 利用者の声 */
+.p-voice {
+  margin-bottom: f.clamp-rem(390, 40, 1400, 80);
+  &__list {
+    margin-top: f.clamp-rem(390, 60, 1400, 83);
+    display: flex;
+    flex-direction: column;
+    gap: f.rem(40);
+  }
+}

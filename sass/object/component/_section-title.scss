@@ -9,7 +9,7 @@
   text-align: center;
   &::after {
     content: "";
-    width: f.clamp-rem(300, 60, 1400, 80);
+    width: f.clamp-rem(390, 60, 1400, 80);
     height: f.rem(2);
     background-color: v.$black;
     margin: 0 auto;
