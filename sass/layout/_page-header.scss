@@ -1,0 +1,16 @@
+@use '../foundation/variables' as v;
+@use '../foundation/functions' as f;
+@use '../foundation/mixin' as m;
+
+/* ページヘッダー */
+.l-page-header {
+  background-color: v.$keyColor;
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+  margin-top: clamp(3.75rem, 3.267rem + 1.98vw, 5rem);
+  padding-top:  f.clamp-rem(390, 30, 1400,60);
+  padding-bottom: f.clamp-rem(390, 50, 1400, 98);
+  @include m.media(m) {
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    margin-top: 0;
+  }
+}

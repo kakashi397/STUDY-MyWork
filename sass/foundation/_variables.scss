@@ -16,4 +16,6 @@ $fz-s: f.rem(14);
 $fz-m: f.rem(16);
 $fz-l: f.rem(20);
 $fz-xl: f.rem(22);
-$clamp-l: f.clamp-rem(390, 24, 1400, 28);
+$clamp-s: f.clamp-rem(390, 20, 1400, 22);
+$clamp-m: f.clamp-rem(390, 24, 1400, 28);
+$clamp-l: f.clamp-rem(390, 30, 1400, 40);
