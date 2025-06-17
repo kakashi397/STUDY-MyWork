@@ -7,7 +7,6 @@
   background-color: v.$keyColor;
   margin-top: clamp(3.75rem, 3.267rem + 1.98vw, 5rem);
   margin-bottom: f.rem(40);
-  padding: 0 f.rem(20);
   clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
   @include m.media(m) {
     clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);

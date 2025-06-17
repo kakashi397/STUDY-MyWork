@@ -1,0 +1,17 @@
+@use '../../foundation/variables' as v;
+@use '../../foundation/functions' as f;
+
+/* ページヘッダーコンポーネント */
+.c-page-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  &__title {
+    font-size: v.$clamp-l;
+    letter-spacing: 0.1em;
+  }
+  &__title-jp {
+    font-size: v.$fz-s;
+  }
+}

@@ -3,6 +3,7 @@
 @use "./layout/wrapper";
 @use "./layout/contact";
 @use "./layout/footer";
+@use "./layout/page-header";
 @use "./object/component/logo";
 @use "./object/component/header-nav";
 @use "./object/component/hamburger";
@@ -10,9 +11,10 @@
 @use "./object/component/card";
 @use "./object/component/media";
 @use "./object/component/btn";
-@use "./object/component/voiceComponent";
+@use "./object/component/C-voice";
 @use "./object/component/footer-nav";
 @use "./object/component/copyright";
+@use "./object/component/C-page-header";
 @use "./object/project/top/hero";
 @use "./object/project/top/reasons";
 @use "./object/project/top/service";

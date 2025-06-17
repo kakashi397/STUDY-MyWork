@@ -52,15 +52,15 @@ a {
 
 /* ラッパー */
 .l-wrapper {
-  width: 100%;
   max-width: 87.5rem;
   margin: 0 auto;
   padding: 0 clamp(1.25rem, -4.301rem + 22.772vw, 15.625rem);
 }
 
-.l-hero__wrapper {
-  max-width: 67.5rem;
+.l-wide-wrapper {
+  max-width: 70rem;
   margin: 0 auto;
+  padding: 0 1.25rem;
 }
 
 /* コンタクト */
@@ -112,6 +112,21 @@ a {
   .l-footer__body {
     flex-direction: row;
     justify-content: space-between;
+  }
+}
+
+/* ページヘッダー */
+.l-page-header {
+  background-color: #FFED58;
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+  margin-top: clamp(3.75rem, 3.267rem + 1.98vw, 5rem);
+  padding-top: clamp(1.875rem, 1.150990099rem + 2.9702970297vw, 3.75rem);
+  padding-bottom: clamp(3.125rem, 1.9665841584rem + 4.7524752475vw, 6.125rem);
+}
+@media (min-width: 767px) {
+  .l-page-header {
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    margin-top: 0;
   }
 }
 
@@ -426,12 +441,26 @@ a {
   font-family: "Noto Sans JP";
 }
 
+/* ページヘッダーコンポーネント */
+.c-page-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+.c-page-header__title {
+  font-size: clamp(1.875rem, 1.6336633663rem + 0.9900990099vw, 2.5rem);
+  letter-spacing: 0.1em;
+}
+.c-page-header__title-jp {
+  font-size: 0.875rem;
+}
+
 /* ヒーロー */
 .p-hero {
   background-color: #FFED58;
   margin-top: clamp(3.75rem, 3.267rem + 1.98vw, 5rem);
   margin-bottom: 2.5rem;
-  padding: 0 1.25rem;
   clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
 }
 @media (min-width: 767px) {
