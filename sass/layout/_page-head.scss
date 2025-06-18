@@ -4,7 +4,7 @@
 
 /* ページヘッド */
 .l-page-head {
-  padding-top: f.rem(50);
+  padding-top: f.clamp-rem(390, 50, 1400, 53);
   padding-bottom: f.rem(50);
   @include m.media(m) {
     margin-top: 0;
