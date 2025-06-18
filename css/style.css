@@ -485,6 +485,7 @@ a {
   line-height: 1.8em;
 }
 
+/* ラベル */
 /* ヒーロー */
 .p-hero {
   background-color: #FFED58;
@@ -658,6 +659,11 @@ a {
 }
 .p-detail__description {
   line-height: 1.8em;
+}
+
+/* ステップ */
+.p-step {
+  margin-bottom: clamp(2.5rem, 1.051980198rem + 5.9405940594vw, 6.25rem);
 }
 
 /* ユーティリティ */

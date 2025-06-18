@@ -17,10 +17,12 @@
 @use "./object/component/copyright";
 @use "./object/component/C-page-header";
 @use "./object/component/C-page-head";
+@use "./object/component/label";
 @use "./object/project/top/hero";
 @use "./object/project/top/reasons";
 @use "./object/project/top/service";
 @use "./object/project/top/price";
 @use "./object/project/top/voice";
 @use "./object/project/service/detail";
+@use "./object/project/service/step";
 @use "./object/utility/utility";
