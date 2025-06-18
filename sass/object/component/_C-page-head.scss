@@ -1,0 +1,20 @@
+@use '../../foundation/variables' as v;
+@use '../../foundation/functions' as f;
+
+/* ページヘッドコンポーネント */
+.c-page-head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: f.rem(30);
+  text-align: center;
+  &__lead {
+    font-size: v.$clamp-s;
+    line-height: 1.8em;
+    font-weight: 500;
+  }
+  &__description {
+    font-size: v.$fz-s;
+    line-height: 1.8em
+  }
+}

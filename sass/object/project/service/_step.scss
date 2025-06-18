@@ -1,0 +1,6 @@
+@use '../../../foundation/functions' as f;
+
+/* ステップ */
+.p-step {
+  margin-bottom: f.clamp-rem(390, 40, 1400, 100);
+}

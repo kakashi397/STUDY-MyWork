@@ -4,6 +4,7 @@
 @use "./layout/contact";
 @use "./layout/footer";
 @use "./layout/page-header";
+@use "./layout/page-head";
 @use "./object/component/logo";
 @use "./object/component/header-nav";
 @use "./object/component/hamburger";
@@ -15,9 +16,13 @@
 @use "./object/component/footer-nav";
 @use "./object/component/copyright";
 @use "./object/component/C-page-header";
+@use "./object/component/C-page-head";
+@use "./object/component/label";
 @use "./object/project/top/hero";
 @use "./object/project/top/reasons";
 @use "./object/project/top/service";
 @use "./object/project/top/price";
 @use "./object/project/top/voice";
+@use "./object/project/service/detail";
+@use "./object/project/service/step";
 @use "./object/utility/utility";
