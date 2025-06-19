@@ -3,7 +3,8 @@
 
 /* ステップ */
 .p-step {
-  margin-bottom: f.clamp-rem(390, 36, 1400, 100);
+  margin-bottom: f.clamp-rem(390, 36, 1400, 98);
+  
   &__list {
     margin-top: f.clamp-rem(390, 60, 1400, 80);
     display: flex;
@@ -13,11 +14,7 @@
   }
   &__item {
     display: flex;
-    justify-content: space-between;
-  }
-  &__description {
-    width: calc(250 / 350 * 100%);
-    
+    gap: f.clamp-rem(390, 20, 1400, 63);
   }
   &__heading {
     font-size: v.$clamp-xs;

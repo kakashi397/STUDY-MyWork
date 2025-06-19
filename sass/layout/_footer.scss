@@ -11,6 +11,10 @@
   align-items: center;
   border-top: f.rem(1) solid v.$line;
   &__body {
+    max-width: f.rem(940);
+    padding-right: f.rem(20);
+    padding-left: f.rem(20);
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
