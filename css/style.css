@@ -486,6 +486,26 @@ a {
 }
 
 /* ラベル */
+.c-label {
+  width: clamp(5rem, 3.0693069307rem + 7.9207920792vw, 10rem);
+  height: clamp(5rem, 3.551980198rem + 5.9405940594vw, 8.75rem);
+  padding-top: clamp(0.625rem, 0.3836633663rem + 0.9900990099vw, 1.25rem);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #FFED58;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%);
+}
+.c-label__title {
+  font-size: clamp(0.875rem, 0.7784653465rem + 0.396039604vw, 1.125rem);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.c-label__number {
+  font-size: clamp(2rem, 1.4207920792rem + 2.3762376238vw, 3.5rem);
+  font-weight: bold;
+}
+
 /* ヒーロー */
 .p-hero {
   background-color: #FFED58;
@@ -663,7 +683,33 @@ a {
 
 /* ステップ */
 .p-step {
-  margin-bottom: clamp(2.5rem, 1.051980198rem + 5.9405940594vw, 6.25rem);
+  margin-bottom: clamp(2.25rem, 0.7054455446rem + 6.3366336634vw, 6.25rem);
+}
+.p-step__list {
+  margin-top: clamp(3.75rem, 3.2673267327rem + 1.9801980198vw, 5rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: clamp(1.875rem, 1.3923267327rem + 1.9801980198vw, 3.125rem);
+}
+.p-step__item {
+  display: flex;
+  justify-content: space-between;
+}
+.p-step__description {
+  width: 71.4285714286%;
+}
+.p-step__heading {
+  font-size: clamp(1.125rem, 1.0284653465rem + 0.396039604vw, 1.375rem);
+  font-weight: 500;
+  margin-bottom: 0.9375rem;
+}
+.p-step__text {
+  font-size: clamp(0.875rem, 0.8267326733rem + 0.198019802vw, 1rem);
+  line-height: 1.8em;
+}
+.p-step__text a {
+  text-decoration: underline;
 }
 
 /* ユーティリティ */
