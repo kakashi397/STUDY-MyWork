@@ -137,7 +137,7 @@ a {
 /* ページヘッド */
 .l-page-head {
   padding-top: clamp(3.125rem, 3.0525990099rem + 0.297029703vw, 3.3125rem);
-  padding-bottom: 3.125rem;
+  padding-bottom: 2.9375rem;
 }
 @media (min-width: 767px) {
   .l-page-head {
@@ -712,6 +712,58 @@ a {
 }
 .p-step__text a {
   text-decoration: underline;
+}
+
+/* テーブル */
+.p-plan-table {
+  overflow-x: auto;
+  margin-bottom: clamp(2.5rem, 1.5346534653rem + 3.9603960396vw, 5rem);
+}
+.p-plan-table__body {
+  width: 37.5rem;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+.p-plan-table__body th, .p-plan-table__body td {
+  border: 1px solid #707070;
+  font-size: 0.875rem;
+  padding: 0.616875rem;
+}
+.p-plan-table__head th {
+  background-color: #FAFAFA;
+  font-weight: 500;
+}
+.p-plan-table__head th:first-child {
+  width: 9.375rem;
+  background-color: #FFF;
+  border-top: none;
+  border-left: none;
+}
+.p-plan-table__head th:nth-child(n+2) {
+  width: 9.375rem;
+}
+.p-plan-table__feature {
+  background-color: #FAFAFA;
+  font-weight: 500;
+  text-align-last: left;
+}
+.p-plan-table__data {
+  font-size: 0.875rem;
+  text-align: center;
+}
+.p-plan-table__title {
+  display: block;
+  font-size: 0.875rem;
+}
+.p-plan-table__price {
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+.p-plan-table__tax {
+  font-size: 0.75rem;
+}
+.p-plan-table__note {
+  font-size: 0.75rem;
 }
 
 /* ユーティリティ */

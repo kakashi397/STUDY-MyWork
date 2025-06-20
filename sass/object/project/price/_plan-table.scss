@@ -1,0 +1,56 @@
+@use '../../../foundation/functions' as f;
+@use '../../../foundation/variables' as v;
+@use '../../../foundation/mixin' as m;
+
+/* テーブル */
+.p-plan-table {
+  overflow-x: auto;
+  margin-bottom: f.clamp-rem(390, 40, 1400, 80);
+  &__body {
+    width: f.rem(600);
+    table-layout: fixed;
+    border-collapse: collapse;
+  }
+  &__body th,
+  &__body td {
+    border: 1px solid v.$line;
+    font-size: v.$fz-s;
+    padding: f.rem(9.87);
+  }
+  &__head th {
+    background-color: v.$background;
+    font-weight: 500;
+    &:first-child {
+      width: f.rem(150);
+      background-color: v.$white;
+      border-top: none;
+      border-left: none;
+    }
+    &:nth-child(n+2) {
+      width: f.rem(150);
+    }
+  }
+  &__feature {
+    background-color: v.$background;
+    font-weight: 500;
+    text-align-last: left;
+  }
+  &__data {
+    font-size: v.$fz-s;
+    text-align: center;
+  }
+  &__title {
+    display: block;
+    font-size: v.$fz-s;
+  }
+  &__price {
+    font-size: v.$fz-ml;
+    font-weight: 500;
+  }
+  &__tax {
+    font-size: v.$fz-xs;
+  }
+  &__note {
+    font-size: v.$fz-xs;
+  }
+}
