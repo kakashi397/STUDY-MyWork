@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>お問い合わせ</title>
+  <meta name="description" content="当サービスに関するお問い合わせは、お問い合わせフォームよりお願いいたします。">
+  <link rel="icon" href="img/common/favicon.ico">
+  <link rel="apple-touch-icon" href="img/common/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/script.js"></script>
+</head>
+<body>
+  <header class="l-header">
+    <h1 class="c-logo">
+      <a href="index.html"><img src="img/common/logo.svg" alt="STUDY"></a>
+    </h1>
+    <button class="c-hamburger js-hamburger">
+      <span class="c-hamburger__line"></span>
+      <span class="c-hamburger__line"></span>
+      <span class="c-hamburger__line"></span>
+    </button>
+    <nav class="c-header-nav js-nav">
+      <ul class="c-header-nav__list">
+        <li class="c-header-nav__item"><a href="index.html">トップ</a></li>
+        <li class="c-header-nav__item"><a href="./service.html">サービス</a></li>
+        <li class="c-header-nav__item"><a href="./price.html">料金</a></li>
+        <li class="c-header-nav__item"><a href="./contact.html">お問い合わせ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="l-page-header">
+      <div class="l-wrapper">
+        <div class="c-page-header">
+          <span class="c-page-header__title-jp">お問い合わせ</span>
+          <h1 class="c-page-header__title"><span class="u-uppercase">contact</span></h1>
+        </div>
+      </div>
+    </section>
+
+    <section class="l-page-head">
+      <div class="l-wrapper">
+        <div class="c-page-head">
+          <p class="c-page-head__lead">まずはお気軽に<br class="u-only-sp">お問い合わせください。</p>
+          <p class="c-page-head__description">お問い合わせは下記のフォームからお願いいたします。<br>3営業日以内にご返信いたします。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="p-contact">
+      <div class="l-wrapper">
+        <h2 class="c-section-title">お問い合わせフォーム</h2>
+        
+        <form action="" method="post" class="p-contact__form">
+          
+          <dl class="p-contact__list">
+            <div class="p-contact__item">
+              <dt class="p-contact__label">種類<span class="c-required">*</span></dt>
+              <dd class="p-contact__input">
+                <div class="p-contact__radio-group">
+                  <div class="p-contact__radio-item">
+                    <input type="radio" id="service" name="kind" value="サービスに関するお問い合わせ">
+                    <label for="servise">サービスに関するお問い合わせ</label>
+                  </div>
+                  <div class="p-contact__radio-item">
+                    <input type="radio" id="interview" name="kind" value="取材に関するお問い合わせ">
+                    <label for="interview">取材に関するお問い合わせ</label>
+                  </div>
+                  <div class="p-contact__radio-item">
+                    <input type="radio" id="document" name="kind" value="資料請求">
+                    <label for="document">資料請求</label>
+                  </div>
+                  <div class="p-contact__radio-item">
+                    <input type="radio" id="other" name="kind" value="その他">
+                    <label for="other">その他</label>
+                  </div>
+                </div>
+              </dd>
+            </div>
+
+            <div class="p-contact__item">
+              <dt class="p-contact__label"><label for="company">会社名</label></dt>
+              <dd class="p-contact__input"><input type="text" id="name" name="company" class="c-form-text"></dd>
+            </div>
+            <div class="p-contact__item">
+              <dt class="p-contact__label"><label for="name">お名前</label><span class="c-required">*</span></dt>
+              <dd class="p-contact__input"><input type="text" id="name" name="name" class="c-form-text"></dd>
+            </div>
+            <div class="p-contact__item">
+              <dt class="p-contact__label"><label for="email">メールアドレス</label><span class="c-required">*</span></dt>
+              <dd class="p-contact__input"><input type="email" id="email" name="email" class="c-form-text"></dd>
+            </div>
+            <div class="p-contact__item">
+              <dt class="p-contact__label"><label for="message">詳細内容</label><span class="c-required">*</span></dt>
+              <dd class="p-contact__input"><textarea name="message`" id="message" class="c-form-textarea"></textarea></dd>
+            </div>
+          </dl>
+
+          <div class="p-contact__btn">
+            <input type="submit" value="送信する" class="c-btn c-btn--secondary">
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+    <footer class="l-footer">
+    <div class="l-footer__body">
+      <div class="c-logo c-logo--footer">
+        <img src="img/common/logo.svg" alt="STUDY">
+      </div>
+      <nav class="c-footer-nav">
+        <ul class="c-footer-nav__list">
+          <li class="c-footer-nav__item"><a href="index.html">トップ</a></li>
+          <li class="c-footer-nav__item"><a href="./service.html">サービス</a></li>
+          <li class="c-footer-nav__item"><a href="./price.html">料金</a></li>
+          <li class="c-footer-nav__item"><a href="./contact.html">お問い合わせ</a></li>
+        </ul>
+      </nav>
+    </div>
+    <small class="c-copyright">Copyright © study. All rights reserved.</small>
+  </footer>
+
