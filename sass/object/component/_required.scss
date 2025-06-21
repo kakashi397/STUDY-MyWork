@@ -1,0 +1,8 @@
+@use '../../foundation/variables' as v;
+@use '../../foundation/functions' as f;
+
+/* 赤アスタリスク */
+.c-required {
+  color: v.$required;
+  margin-left: f.rem(5);
+}

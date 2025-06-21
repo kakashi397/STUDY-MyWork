@@ -362,6 +362,13 @@ a {
   top: 1.0625rem;
   right: 1.25rem;
 }
+.c-btn--form {
+  background-color: #000;
+  width: 9.75rem;
+  padding: 0.9375rem;
+  color: #FFF;
+  border: none;
+}
 
 /* ボイス */
 .c-voice {
@@ -509,6 +516,26 @@ a {
 .c-label__number {
   font-size: clamp(2rem, 1.4207920792rem + 2.3762376238vw, 3.5rem);
   font-weight: bold;
+}
+
+/* 赤アスタリスク */
+.c-required {
+  color: #E52D27;
+  margin-left: 0.3125rem;
+}
+
+/* フォームテキスト */
+.c-form-text {
+  width: 100%;
+  border: 1px solid #CCCCCC;
+  padding: 0.9375rem 0.625rem;
+}
+
+/* フォームテキストエリア */
+.c-form-textarea {
+  border: 1px solid #CCCCCC;
+  width: 100%;
+  height: 12.5rem;
 }
 
 /* ヒーロー */
@@ -717,17 +744,31 @@ a {
 /* テーブル */
 .p-plan-table {
   overflow-x: auto;
-  margin-bottom: clamp(2.5rem, 1.5346534653rem + 3.9603960396vw, 5rem);
+  margin-bottom: clamp(2.1875rem, 1.1014851485rem + 4.4554455446vw, 5rem);
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
 }
 .p-plan-table__body {
   width: 37.5rem;
   table-layout: fixed;
   border-collapse: collapse;
+  margin: 0 auto;
+}
+@media (min-width: 767px) {
+  .p-plan-table__body {
+    width: 56.25rem;
+  }
 }
 .p-plan-table__body th, .p-plan-table__body td {
   border: 1px solid #707070;
   font-size: 0.875rem;
   padding: 0.616875rem;
+}
+@media (min-width: 767px) {
+  .p-plan-table__body th, .p-plan-table__body td {
+    padding: 1.25rem;
+    font-size: 1rem;
+  }
 }
 .p-plan-table__head th {
   background-color: #FAFAFA;
@@ -739,8 +780,18 @@ a {
   border-top: none;
   border-left: none;
 }
+@media (min-width: 767px) {
+  .p-plan-table__head th:first-child {
+    width: 18.75rem;
+  }
+}
 .p-plan-table__head th:nth-child(n+2) {
   width: 9.375rem;
+}
+@media (min-width: 767px) {
+  .p-plan-table__head th:nth-child(n+2) {
+    width: 12.5rem;
+  }
 }
 .p-plan-table__feature {
   background-color: #FAFAFA;
@@ -751,6 +802,11 @@ a {
   font-size: 0.875rem;
   text-align: center;
 }
+@media (min-width: 767px) {
+  .p-plan-table__data {
+    font-size: 1.125rem;
+  }
+}
 .p-plan-table__title {
   display: block;
   font-size: 0.875rem;
@@ -759,11 +815,53 @@ a {
   font-size: 1.125rem;
   font-weight: 500;
 }
+@media (min-width: 767px) {
+  .p-plan-table__price {
+    font-size: 1.5rem;
+  }
+}
 .p-plan-table__tax {
   font-size: 0.75rem;
 }
 .p-plan-table__note {
   font-size: 0.75rem;
+}
+
+/* フォーム */
+.p-contact-form {
+  margin-bottom: clamp(2.5rem, 1.5346534653rem + 3.9603960396vw, 5rem);
+}
+.p-contact-form__form {
+  margin-top: clamp(3.75rem, 3.2673267327rem + 1.9801980198vw, 5rem);
+}
+.p-contact-form__list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5625rem;
+  margin-bottom: clamp(1.25rem, 0.7673267327rem + 1.9801980198vw, 2.5rem);
+}
+@media (min-width: 767px) {
+  .p-contact-form__list {
+    gap: 2.5rem;
+  }
+}
+.p-contact-form__label {
+  font-weight: 500;
+  margin-bottom: 0.625rem;
+}
+.p-contact-form__radio-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+@media (min-width: 767px) {
+  .p-contact-form__radio-group {
+    flex-direction: row;
+    gap: 2.5rem;
+  }
+}
+.p-contact-form__btn {
+  text-align: center;
 }
 
 /* ユーティリティ */

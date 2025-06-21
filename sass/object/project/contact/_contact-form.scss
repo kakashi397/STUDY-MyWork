@@ -1,0 +1,36 @@
+@use '../../../foundation/variables' as v;
+@use '../../../foundation/functions' as f;
+@use '../../../foundation/mixin' as m;
+
+/* フォーム */
+.p-contact-form {
+  margin-bottom: f.clamp-rem(390, 40, 1400, 80);
+  &__form {
+    margin-top: f.clamp-rem(390, 60, 1400, 80);
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: f.rem(25);
+    margin-bottom: f.clamp-rem(390, 20, 1400, 40);
+    @include m.media(m) {
+      gap: f.rem(40);
+    }
+  }
+  &__label {
+    font-weight: 500;
+    margin-bottom: f.rem(10);
+  }
+  &__radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: f.rem(10);
+    @include m.media(m) {
+      flex-direction: row;
+      gap: f.rem(40);
+    }
+  }
+  &__btn {
+    text-align: center;
+  }
+}

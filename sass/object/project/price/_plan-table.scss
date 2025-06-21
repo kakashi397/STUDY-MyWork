@@ -5,17 +5,27 @@
 /* テーブル */
 .p-plan-table {
   overflow-x: auto;
-  margin-bottom: f.clamp-rem(390, 40, 1400, 80);
+  margin-bottom: f.clamp-rem(390, 35, 1400, 80);
+  padding-left: f.rem(20);
+  padding-right: f.rem(20);
   &__body {
     width: f.rem(600);
     table-layout: fixed;
     border-collapse: collapse;
-  }
-  &__body th,
-  &__body td {
-    border: 1px solid v.$line;
-    font-size: v.$fz-s;
-    padding: f.rem(9.87);
+    margin: 0 auto;
+    @include m.media(m) {
+      width: f.rem(900);
+    }
+    & th,
+    & td {
+      border: 1px solid v.$line;
+      font-size: v.$fz-s;
+      padding: f.rem(9.87);
+      @include m.media(m) {
+        padding: f.rem(20);
+        font-size: v.$fz-m;
+      }
+    }
   }
   &__head th {
     background-color: v.$background;
@@ -25,9 +35,15 @@
       background-color: v.$white;
       border-top: none;
       border-left: none;
+      @include m.media(m) {
+        width: f.rem(300);
+      }
     }
     &:nth-child(n+2) {
       width: f.rem(150);
+      @include m.media(m) {
+        width: f.rem(200);
+      }
     }
   }
   &__feature {
@@ -38,6 +54,9 @@
   &__data {
     font-size: v.$fz-s;
     text-align: center;
+    @include m.media(m) {
+      font-size: v.$fz-ml;
+    }
   }
   &__title {
     display: block;
@@ -46,6 +65,9 @@
   &__price {
     font-size: v.$fz-ml;
     font-weight: 500;
+    @include m.media(m) {
+      font-size: v.$fz-xxl;
+    }
   }
   &__tax {
     font-size: v.$fz-xs;

@@ -1,0 +1,10 @@
+@use '../../foundation/variables' as v;
+@use '../../foundation/functions' as f;
+@use '../../foundation/mixin' as m;
+
+/* フォームテキストエリア */
+.c-form-textarea {
+  border: 1px solid v.$form-line;
+  width: 100%;
+  height: f.rem(200);
+}
