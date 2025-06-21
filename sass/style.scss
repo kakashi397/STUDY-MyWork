@@ -18,6 +18,9 @@
 @use "./object/component/C-page-header";
 @use "./object/component/C-page-head";
 @use "./object/component/label";
+@use "./object/component/required";
+@use "./object/component/form-text";
+@use "./object/component/form-textarea";
 @use "./object/project/top/hero";
 @use "./object/project/top/reasons";
 @use "./object/project/top/service";
@@ -26,4 +29,5 @@
 @use "./object/project/service/detail";
 @use "./object/project/service/step";
 @use "./object/project/price/plan-table";
+@use "./object/project/contact/contact-form";
 @use "./object/utility/utility";

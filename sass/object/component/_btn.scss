@@ -29,4 +29,11 @@
       right: f.rem(20);
     }
   }
+  &--form {
+    background-color: v.$black;
+    width: f.rem(156);
+    padding: f.rem(15);
+    color: v.$white;
+    border: none;
+  }
 }
